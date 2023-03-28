@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Visma\Magento2Psalm\Exception;
+namespace ErwinRomkes\Magento2Psalm\Exception;
 
 use Psalm\Issue\CodeIssue;
 use Throwable;

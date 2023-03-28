@@ -1,12 +1,12 @@
-# tdgroot/magento2-psalm
+# erwinromkes/magento2-psalm
 
 Psalm plugin for Magento 2
 
 ## Installation
 
 ```shell script
-composer require --dev tdgroot/magento2-psalm
-vendor/bin/psalm-plugin enable tdgroot/magento2-psalm
+composer require --dev erwinromkes/magento2-psalm
+vendor/bin/psalm-plugin enable erwinromkes/magento2-psalm
 ```
 
 ## Usage

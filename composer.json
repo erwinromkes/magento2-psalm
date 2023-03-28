@@ -1,5 +1,5 @@
 {
-    "name": "tdgroot/magento2-psalm",
+    "name": "erwinromkes/magento2-psalm",
     "description": "Psalm plugin for Magento 2",
     "type": "psalm-plugin",
     "license": "MIT",
@@ -11,29 +11,33 @@
         {
             "name": "Timon de Groot",
             "email": "timon@mooore.nl"
+        },
+        {
+            "name": "Erwin Romkes",
+            "email": "erwin@mooore.nl"
         }
     ],
     "minimum-stability": "stable",
     "require": {
-        "vimeo/psalm": "^4.0",
-        "php": "^7.3",
+        "vimeo/psalm": "^5.8",
+        "php": "^7.4 || ~8.0.0 || ~8.1.0 || ~8.2.0",
         "ext-simplexml": "*"
     },
     "extra": {
         "psalm": {
-            "pluginClass": "Visma\\Magento2Psalm\\Plugin"
+            "pluginClass": "ErwinRomkes\\Magento2Psalm\\Plugin"
         }
     },
     "autoload": {
         "psr-4": {
-            "Visma\\Magento2Psalm\\": [
+            "ErwinRomkes\\Magento2Psalm\\": [
                 "src/"
             ]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Visma\\Magento2Psalm\\": [
+            "ErwinRomkes\\Magento2Psalm\\": [
                 "tests/"
             ]
         }

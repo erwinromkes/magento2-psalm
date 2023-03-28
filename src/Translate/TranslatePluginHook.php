@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Visma\Magento2Psalm\Translate;
+namespace ErwinRomkes\Magento2Psalm\Translate;
 
 use PhpParser\Node\Expr\FuncCall;
 use Psalm\Codebase;
@@ -34,7 +34,7 @@ class TranslatePluginHook implements AfterFunctionCallAnalysisInterface
             return;
         }
 
-        // $analysis = new \Visma\Magento2Psalm\Translate\TranslateAnalysis();
+        // $analysis = new \ErwinRomkes\Magento2Psalm\Translate\TranslateAnalysis();
         $analysisNeue = TranslationAnalyser::analyse($expr, $function_id, $context, $statements_source, $codebase);
 
         // foreach ($analysis->analyse($expr, $statements_source, $context) as $issue) {

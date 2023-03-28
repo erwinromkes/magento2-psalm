@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Visma\Magento2Psalm\Translate;
+namespace ErwinRomkes\Magento2Psalm\Translate;
 
 use PhpParser\Node\Expr;
 use PhpParser\Node\Expr\FuncCall;

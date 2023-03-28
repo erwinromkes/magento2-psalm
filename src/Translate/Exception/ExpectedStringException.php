@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Visma\Magento2Psalm\Translate\Exception;
+namespace ErwinRomkes\Magento2Psalm\Translate\Exception;
 
 use Throwable;
 

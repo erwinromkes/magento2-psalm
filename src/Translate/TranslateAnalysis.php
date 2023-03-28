@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Visma\Magento2Psalm\Translate;
+namespace ErwinRomkes\Magento2Psalm\Translate;
 
 use PhpParser\Node\Expr;
 use PhpParser\Node\Expr\Array_;
@@ -21,12 +21,12 @@ use Psalm\Issue\InvalidArgument;
 use Psalm\Issue\TooFewArguments;
 use Psalm\Issue\TooManyArguments;
 use Psalm\StatementsSource;
-use Visma\Magento2Psalm\Translate\Exception\ExpectedArrayException;
-use Visma\Magento2Psalm\Translate\Exception\ExpectedStringException;
-use Visma\Magento2Psalm\Translate\Exception\InvalidArgumentCountException;
-use Visma\Magento2Psalm\Translate\Exception\InvalidPlaceholderKeyException;
-use Visma\Magento2Psalm\Translate\Exception\MissingPlaceholderKeyException;
-use Visma\Magento2Psalm\Translate\Exception\UnprintableValueException;
+use ErwinRomkes\Magento2Psalm\Translate\Exception\ExpectedArrayException;
+use ErwinRomkes\Magento2Psalm\Translate\Exception\ExpectedStringException;
+use ErwinRomkes\Magento2Psalm\Translate\Exception\InvalidArgumentCountException;
+use ErwinRomkes\Magento2Psalm\Translate\Exception\InvalidPlaceholderKeyException;
+use ErwinRomkes\Magento2Psalm\Translate\Exception\MissingPlaceholderKeyException;
+use ErwinRomkes\Magento2Psalm\Translate\Exception\UnprintableValueException;
 
 class TranslateAnalysis
 {
@@ -89,7 +89,7 @@ class TranslateAnalysis
      * @param \PhpParser\Node\Expr\FuncCall $call
      * @param \Psalm\StatementsSource       $source
      * @param \Psalm\Context                $context
-     * @throws \Visma\Magento2Psalm\Translate\Exception\ExpectedStringException
+     * @throws \ErwinRomkes\Magento2Psalm\Translate\Exception\ExpectedStringException
      */
     private function checkStringArg(FuncCall $call, StatementsSource $source, \Psalm\Context $context): void
     {
@@ -171,8 +171,8 @@ class TranslateAnalysis
     /**
      * @param \PhpParser\Node\Expr\FuncCall $call
      * @param \Psalm\StatementsSource       $source
-     * @throws \Visma\Magento2Psalm\Translate\Exception\InvalidArgumentCountException
-     * @throws \Visma\Magento2Psalm\Translate\Exception\UnprintableValueException
+     * @throws \ErwinRomkes\Magento2Psalm\Translate\Exception\InvalidArgumentCountException
+     * @throws \ErwinRomkes\Magento2Psalm\Translate\Exception\UnprintableValueException
      */
     private function checkNumericPlaceholders(FuncCall $call, StatementsSource $source, Context $context): void
     {
@@ -249,9 +249,9 @@ class TranslateAnalysis
     /**
      * @param \PhpParser\Node\Expr\FuncCall $call
      * @param \Psalm\StatementsSource       $source
-     * @throws \Visma\Magento2Psalm\Translate\Exception\InvalidPlaceholderKeyException
-     * @throws \Visma\Magento2Psalm\Translate\Exception\MissingPlaceholderKeyException
-     * @throws \Visma\Magento2Psalm\Translate\Exception\UnprintableValueException
+     * @throws \ErwinRomkes\Magento2Psalm\Translate\Exception\InvalidPlaceholderKeyException
+     * @throws \ErwinRomkes\Magento2Psalm\Translate\Exception\MissingPlaceholderKeyException
+     * @throws \ErwinRomkes\Magento2Psalm\Translate\Exception\UnprintableValueException
      */
     private function checkStringPlaceholders(FuncCall $call, StatementsSource $source, Context $context): void
     {
@@ -301,8 +301,8 @@ class TranslateAnalysis
      * @param \PhpParser\Node\Expr\Array_   $args
      * @param \PhpParser\Node\Expr\FuncCall $call
      * @param \Psalm\StatementsSource       $source
-     * @throws \Visma\Magento2Psalm\Translate\Exception\InvalidPlaceholderKeyException
-     * @throws \Visma\Magento2Psalm\Translate\Exception\MissingPlaceholderKeyException
+     * @throws \ErwinRomkes\Magento2Psalm\Translate\Exception\InvalidPlaceholderKeyException
+     * @throws \ErwinRomkes\Magento2Psalm\Translate\Exception\MissingPlaceholderKeyException
      */
     private function checkAllPlaceholdersExist(
         array $placeholders,
@@ -329,7 +329,7 @@ class TranslateAnalysis
      * @param \PhpParser\Node\Expr\FuncCall $call
      * @param \Psalm\StatementsSource       $source
      * @return bool
-     * @throws \Visma\Magento2Psalm\Translate\Exception\InvalidPlaceholderKeyException
+     * @throws \ErwinRomkes\Magento2Psalm\Translate\Exception\InvalidPlaceholderKeyException
      */
 
     private function checkPlaceholderExists(

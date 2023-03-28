@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Visma\Magento2Psalm\Factory;
+namespace ErwinRomkes\Magento2Psalm\Factory;
 
 class FactoryMocker
 {

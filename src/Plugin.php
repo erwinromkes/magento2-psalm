@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Visma\Magento2Psalm;
+namespace ErwinRomkes\Magento2Psalm;
 
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
@@ -17,7 +17,7 @@ use RegexIterator;
 use SimpleXMLElement;
 use Psalm\Plugin\PluginEntryPointInterface;
 use Psalm\Plugin\RegistrationInterface;
-use Visma\Magento2Psalm\Factory\FactoryMocker;
+use ErwinRomkes\Magento2Psalm\Factory\FactoryMocker;
 
 /**
  * Class Plugin

@@ -8,9 +8,9 @@
 
 declare(strict_types=1);
 
-namespace Visma\Magento2Psalm\Translate\Exception;
+namespace ErwinRomkes\Magento2Psalm\Translate\Exception;
 
-use Visma\Magento2Psalm\Exception\IssueException;
+use ErwinRomkes\Magento2Psalm\Exception\IssueException;
 
 class TranslateException extends IssueException
 {
